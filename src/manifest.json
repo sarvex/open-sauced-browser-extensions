@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Open Sauced",
+    "version": "1.0.0",
+    "author": "hello@opensauced.pizza",
+    "homepage_url": "https://opensauced.pizza",
+    "content_scripts": [
+        {
+            "matches": ["https://github.com/*"],
+            "js": ["content-script.js"]
+        }
+    ],
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": false
+    },
+    "permissions": [
+        "storage"
+    ]
+}
